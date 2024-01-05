@@ -9,11 +9,25 @@ class Joueur
         Joueur();
         ~Joueur();
         // Méthode pour ajouter une carte à la main du joueur
-        void ajouterCarte(const Carte& p_nouvelleCarte);
+        void hit(const Carte& p_nouvelleCarte);
+        bool estBuste();
         int calculerScore();
+        bool verifierSiBlackjack();
+        void perdrePartie();
+        void gagnerPartie();
+        bool estPartieNulle();
+
+        void resetMise();
+        void placerMiseInitiale();
+        void gagnerMise();
+        void gagneMiseBlackjack();
+        int obtenirSolde() const;
+        bool verifierSolde() const;
+        void viderMain();
+        ListeChaineeCartes<Carte>& obtenirMain();
 
     private:
-        ListeChaineeCartes main;
+        ListeChaineeCartes<Carte> m_main;
         int m_soldeInitiale;
         int m_mise;
         int m_nombreCartes;

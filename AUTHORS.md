@@ -2,8 +2,7 @@
 
 ## Auteurs du TP
 
-- Prénom Nom (Numéro matricule)
-- Prénom Nom (Numéro matricule)
+- Thomas Tenekeu (2292644)
 
 ## Lien de la vidéo de présentation
 
@@ -12,4 +11,4 @@
 
 ## Lien du dépôt GitHub
 
-- Lien GitHub : 
+- Lien GitHub : https://github.com/DFC-Informatique-Cegep-de-Sainte-Foy/A23_S3_4397_AA_TP02-tomcppblackjack
