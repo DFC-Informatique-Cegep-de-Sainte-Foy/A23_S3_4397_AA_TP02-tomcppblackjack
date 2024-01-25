@@ -1,35 +1,39 @@
 #pragma once
 #include"ListeChaineeCartes.h"
+#include "Carte.h"
 
-template<typename T>
+
 class Joueur
 {
 
     public:
         Joueur();
         ~Joueur();
-        // Méthode pour ajouter une carte à la main du joueur
+        // recevoir carte
         void hit(const Carte& p_nouvelleCarte);
         bool estBuste();
-        int calculerScore();
+        int  calculerScore();
         bool verifierSiBlackjack();
         void perdrePartie();
+        void perdreMise();
         void gagnerPartie();
         bool estPartieNulle();
+        void gagnerAvecBlackjack();
 
-        void resetMise();
-        void placerMiseInitiale();
+        void renitialiserMise();
+        void miseInitialeMise();
         void gagnerMise();
-        void gagneMiseBlackjack();
-        int obtenirSolde() const;
-        bool verifierSolde() const;
+        int  obtenirSolde() const;
+        bool verifierSonSolde() const;
         void viderMain();
         ListeChaineeCartes<Carte>& obtenirMain();
+
+        bool estBuste() const;
 
     private:
         ListeChaineeCartes<Carte> m_main;
         int m_soldeInitiale;
         int m_mise;
-        int m_nombreCartes;
+        int m_nombreCartes = 7;
 };
 

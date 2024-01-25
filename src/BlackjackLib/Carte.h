@@ -1,18 +1,22 @@
 #pragma once
 #include <iostream>
 
-const std::string symboles[] = { "Coeur", "Carreau", "Trefle", "Pique" };
+enum Symbole {Coeur,Carreau,Trefle,Pique };
 
 class Carte
 {
     public:
-        Carte(int p_valeur, std::string p_symbole);
+        Carte(int p_valeur, Symbole p_symbole);
+        Carte();
         ~Carte();
+        static std::string symboleToString(Symbole p_symbole);
         std::string obtenirTypeCarte() const;
-        std::string obtenirSymbole() const;
+        Symbole obtenirSymbole() const;
         int ObtenirValeur() const;
+        bool operator>(const Carte& p_autreCarte) const;
+        static int comparerCartes(const Carte& p_carte1, const Carte& p_carte2);
     private:
         int m_valeur;
-        int m_symboleIndex;
+        Symbole m_symboleIndex;
 };
 

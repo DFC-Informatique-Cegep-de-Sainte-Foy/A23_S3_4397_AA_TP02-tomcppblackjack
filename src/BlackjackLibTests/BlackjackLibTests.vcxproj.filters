@@ -18,5 +18,14 @@
     <ClCompile Include="MaClasseTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\source\repos\DFC-Informatique-Cegep-de-Sainte-Foy\E23_S3_4371_AA_TP02-thomas-bryan\src\BlackjackLibTests\CroupierTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\source\repos\DFC-Informatique-Cegep-de-Sainte-Foy\E23_S3_4371_AA_TP02-thomas-bryan\src\BlackjackLibTests\PaquetCartesTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\source\repos\DFC-Informatique-Cegep-de-Sainte-Foy\E23_S3_4371_AA_TP02-thomas-bryan\src\BlackjackLibTests\ListeChaineeCartesTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,17 +1,22 @@
 #pragma once
 #include "Joueur.h"
 #include "ListeChaineeCartes.h"
+#include "Carte.h"
 
-template<typename T>
+
 class Croupier : public Joueur
 {
     public:
         Croupier();
         ~Croupier();
-        // Méthode pour distribuer une carte au joueur ou au croupier
+        void ajouterCarte(const Carte& p_carte);
+        int calculerScore() const;
         void distribuerCarte(Joueur& p_joueur);
-        void revelerPremiereCarte();
-        void viderMain() override;
+        void viderMain();
+        bool verifierSiBlackjack();
+        bool estBuste() const;
+        ListeChaineeCartes<Carte>& obtenirMain();
+
     private:
         ListeChaineeCartes<Carte> m_main;
 };

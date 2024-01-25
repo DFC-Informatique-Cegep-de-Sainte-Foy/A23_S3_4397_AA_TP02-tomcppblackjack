@@ -2,7 +2,7 @@
 #include "ListeChaineeCartes.h"
 #include "Carte.h"
 
-template<typename T>
+
 class Deck
 {
     public:
@@ -10,8 +10,8 @@ class Deck
         ~Deck();
         void MelangerCartes();
         Carte DistribuerCarte();
-        void AjouterCarte(const ListeChaineeCartes& p_carteAAjouter);
+        //void AjouterCarte(const ListeChaineeCartes<Carte>& p_carteAAjouter);
     private:
-        ListeChaineeCartes m_Deck;
+        ListeChaineeCartes<Carte> m_Deck;
 };
 

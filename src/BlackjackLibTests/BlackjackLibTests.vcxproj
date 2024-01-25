@@ -164,6 +164,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\source\repos\DFC-Informatique-Cegep-de-Sainte-Foy\E23_S3_4371_AA_TP02-thomas-bryan\src\BlackjackLibTests\CroupierTests.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\source\repos\DFC-Informatique-Cegep-de-Sainte-Foy\E23_S3_4371_AA_TP02-thomas-bryan\src\BlackjackLibTests\PaquetCartesTests.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\source\repos\DFC-Informatique-Cegep-de-Sainte-Foy\E23_S3_4371_AA_TP02-thomas-bryan\src\BlackjackLibTests\ListeChaineeCartesTests.cpp" />
     <ClCompile Include="MaClasseTests.cpp" />
   </ItemGroup>
   <ItemGroup>
