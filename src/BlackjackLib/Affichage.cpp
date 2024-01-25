@@ -38,10 +38,10 @@ bool Affichage::demanderStand() {
     std::string reponse;
     bool stand = false;
 
-    std::cout << "Voulez-vous rejouer ? o pour Oui et n pour Non: ";
+    std::cout << "Voulez-vous rejouer ? y pour Oui et n pour Non: ";
     std::cin >> reponse;
 
-    if (reponse == "o" || reponse == "O") {
+    if (reponse == "y" || reponse == "Y") {
         stand = false;
     }
     else if (reponse == "n" || reponse == "N") {

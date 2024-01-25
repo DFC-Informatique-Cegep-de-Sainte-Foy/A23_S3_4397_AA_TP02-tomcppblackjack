@@ -1,7 +1,7 @@
 #pragma once
 #include "ListeChaineeCartes.h"
 #include "Carte.h"
-
+// inspiré d'un travail précedemment fait
 
 class Deck
 {

@@ -75,7 +75,8 @@ class ListeChaineeCartes
             } while (enchangee);
         }
         void trie() {
-            std::srand(static_cast<unsigned int>(std::time(nullptr))); // Utilisez static_cast pour éviter un avertissement potentiel
+            // static_cast pour éviter un avertissement potentiel
+            std::srand(static_cast<unsigned int>(std::time(nullptr))); 
 
             if (m_nombreElement < 2) return;
 
@@ -88,7 +89,7 @@ class ListeChaineeCartes
                 temp = temp->m_suivant;
             }
 
-            // Utilisez std::random_device pour obtenir une graine plus aléatoire
+            // std::random_device pour obtenir une graine plus aléatoire
             std::random_device rd;
             std::mt19937 gen(rd());
 
@@ -96,7 +97,6 @@ class ListeChaineeCartes
                 std::uniform_int_distribution<int> dis(0, i);
                 int j = dis(gen);
 
-                // Assurez-vous que les nœuds ne sont pas nuls avant d'échanger les valeurs
                 if (tableauNoeuds[i] != nullptr && tableauNoeuds[j] != nullptr) {
                     T tempValeur = tableauNoeuds[i]->m_valeur;
                     tableauNoeuds[i]->m_valeur = tableauNoeuds[j]->m_valeur;
@@ -130,7 +130,6 @@ class ListeChaineeCartes
                 m_queue = p_nouveauNoeud;
             }
         }
-
 
         void supprimerDebut() {
             if (!m_tete) return;
